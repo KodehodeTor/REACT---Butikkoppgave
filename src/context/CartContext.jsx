@@ -11,7 +11,7 @@ export default function CartProvider({ children }) {
     setCart((prev) => {
       // Sjekker om det allerede er i Cart
       // Looper i mellom array for å sjekke om item.id er likt product.id
-      const exist = ProgressEvent.find((item) => item.id === product.id);
+      const exist = prev.find((item) => item.id === product.id);
       // Om den eksiterer og korrekt retuner ...
       if (exist) {
         return prev.map((item) =>
