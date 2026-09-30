@@ -11,7 +11,7 @@ export default function ProductCard(item) {
       <p>{price}</p>{" "}
       {cartItem ? (
         <button onClick={() => removeFromCart(id)}>
-          Remove from Cart{cartItem}
+          Remove from Cart{cartItem.inCart}
         </button>
       ) : (
         <button onClick={() => addToCart(item)}>Add to Cart</button>
