@@ -7,7 +7,7 @@ export default function Products() {
   if (isError) return <h3>Failed to load product list</h3>;
   return (
     <div className="productList">
-      {data.map((item) => (
+      {data.products.map((item) => (
         <ProductCard key={item.id} {...item} />
       ))}
     </div>
