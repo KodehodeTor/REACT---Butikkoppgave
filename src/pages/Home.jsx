@@ -1,3 +1,10 @@
+import Products from "./Products";
+
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <main>
+      <h1>Products</h1>
+      <Products />
+    </main>
+  );
 }
