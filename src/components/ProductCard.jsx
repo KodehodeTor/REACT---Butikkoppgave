@@ -1,14 +1,15 @@
 import { useCart } from "../context/CartContext";
 
 export default function ProductCard(item) {
-  const { title, image, price, id, inCart } = item;
-  const { addToCart, removeFromCart } = useCart();
+  const { title, thumbnail, price, id } = item;
+  const { cart, addToCart, removeFromCart } = useCart();
+  const cartItem = cart.find((item) => item.id === id);
   return (
     <div className="productCard">
       <h3>{title}</h3>
-      <img src={image} alt={title} />
+      <img src={thumbnail} alt={title} />
       <p>{price}</p>{" "}
-      {inCart ? (
+      {cartItem ? (
         <button onClick={() => removeFromCart(id)}>
           Remove from Cart{inCart}
         </button>
