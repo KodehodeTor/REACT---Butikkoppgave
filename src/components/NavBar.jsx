@@ -6,8 +6,7 @@ export default function NavBar() {
       <Link to="/">
         Home <br />{" "}
       </Link>
-      <Link to="productdetails/:id">Product Details</Link>
-      <Link to="cart">Cart</Link>
+      <Link to="/cart">Cart</Link>
     </nav>
   );
 }
