@@ -48,6 +48,10 @@ export default function CartProvider({ children }) {
     return total + item.inCart;
   }, 0);
 
+  const totalPrice = cart.reduce((total, item) => {
+    return total + item.price * item.inCart;
+  }, 0);
+
   const providerObject = {
     totalItems,
     cart,
