@@ -44,7 +44,12 @@ export default function CartProvider({ children }) {
     setCart([]);
   };
 
+  const totalItems = cart.reduce((total, item) => {
+    return total + item.inCart;
+  }, 0);
+
   const providerObject = {
+    totalItems,
     cart,
     addToCart,
     removeFromCart,
