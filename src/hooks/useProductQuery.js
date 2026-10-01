@@ -7,11 +7,11 @@ import {
 } from "../api/dummyJSON";
 import { useQuery } from "@tanstack/react-query";
 
-const useProductAll = () => {
+const useProductAll = (limit = 10, skip = 0) => {
   // UseQuery tar imot et objekt:
   return useQuery({
-    queryKey: ["products"],
-    queryFn: fetchAllProducts,
+    queryKey: ["products", { limit, skip }],
+    queryFn: () => fetchAllProducts({ limit, skip }),
   });
 };
 
