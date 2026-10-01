@@ -8,9 +8,15 @@ export default function CategoryMenu() {
 
   return (
     <div>
-      {data.map((category) => (
-        <button key={category.slug}>{category.name}</button>
-      ))}
+      <label htmlFor="category">Category:</label>
+      <select id="category">
+        <option value="">All products</option>
+        {data.map((category) => (
+          <option key={category.slug} value={category.slug}>
+            {category.name}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }
