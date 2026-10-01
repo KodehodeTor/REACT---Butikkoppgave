@@ -23,9 +23,17 @@ const fetchProductByCategory = async (category) => {
   return res.data;
 };
 
+const searchProducts = async (product) => {
+  const res = await axios.get(
+    `https://dummyjson.com/products/search?q=${product}`,
+  );
+  return res.data;
+};
+
 export {
   fetchAllProducts,
   fetchProductDetails,
   fetchCategories,
   fetchProductByCategory,
+  searchProducts,
 };

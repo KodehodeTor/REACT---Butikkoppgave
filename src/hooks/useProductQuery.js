@@ -3,6 +3,7 @@ import {
   fetchProductDetails,
   fetchCategories,
   fetchProductByCategory,
+  searchProducts,
 } from "../api/dummyJSON";
 import { useQuery } from "@tanstack/react-query";
 
@@ -40,9 +41,18 @@ const useProductByCategory = (category) => {
   });
 };
 
+const useSearchByProducts = (product) => {
+  return useQuery({
+    queryKey: ["products", product],
+    queryFn: () => searchProducts(product),
+    enabled: !!product,
+  });
+};
+
 export {
   useProductAll,
   useProductDetails,
   useCategories,
   useProductByCategory,
+  useSearchByProducts,
 };
