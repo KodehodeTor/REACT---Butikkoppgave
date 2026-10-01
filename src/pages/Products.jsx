@@ -20,6 +20,9 @@ export default function Products({ selectedCategory }) {
 
   if (isLoading) return <h3>Loading product list...</h3>;
   if (isError) return <h3>Failed to load product list</h3>;
+  if (searchInput && data.products.length === 0) {
+    return <h3>No products found</h3>;
+  }
   return (
     <div className="productList">
       {data.products.map((item) => (
