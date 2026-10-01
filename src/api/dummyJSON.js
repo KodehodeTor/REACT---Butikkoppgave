@@ -16,8 +16,10 @@ const fetchCategories = async () => {
   return res.data;
 };
 
-const productByCategory = async (category) => {
-  const res = await axios.get(`/products/category/${category}`);
+const fetchProductByCategory = async (category) => {
+  const res = await axios.get(
+    `https://dummyjson.com/products/category/${category}`,
+  );
   return res.data;
 };
 
@@ -25,5 +27,5 @@ export {
   fetchAllProducts,
   fetchProductDetails,
   fetchCategories,
-  productByCategory,
+  fetchProductByCategory,
 };
