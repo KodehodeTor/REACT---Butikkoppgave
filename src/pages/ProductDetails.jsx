@@ -11,6 +11,11 @@ export default function ProductDetails() {
       <h2>{data.title}</h2>
       <img src={data.thumbnail} alt={data.title} />
       <p>{data.price}</p>
+      <p>{data.description}</p>
+      <p>{data.category}</p>
+      <p>{data.brand}</p>
+      <p>{data.rating}</p>
+      <p>{data.stock}</p>
     </div>
   );
 }
