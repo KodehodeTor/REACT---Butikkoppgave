@@ -11,4 +11,9 @@ const fetchProductDetails = async (id) => {
   return res.data;
 };
 
-export { fetchAllProducts, fetchProductDetails };
+const fetchCategories = async () => {
+  const res = await axios.get("https://dummyjson.com/products/categories");
+  return res.data;
+};
+
+export { fetchAllProducts, fetchProductDetails, fetchCategories };
