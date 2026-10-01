@@ -1,6 +1,9 @@
 import { useCategories } from "../hooks/useProductQuery";
 
-export default function CategoryMenu() {
+export default function CategoryMenu({
+  selectedCategory,
+  setSelectedCategory,
+}) {
   const { data, isLoading, isError } = useCategories();
 
   if (isLoading) return <p>Loading categories....</p>;
@@ -9,7 +12,11 @@ export default function CategoryMenu() {
   return (
     <div>
       <label htmlFor="category">Category:</label>
-      <select id="category">
+      <select
+        id="category"
+        value={selectedCategory}
+        onChange={(e) => setSelectedCategory(e.target.value)}
+      >
         <option value="">All products</option>
         {data.map((category) => (
           <option key={category.slug} value={category.slug}>
@@ -17,6 +24,7 @@ export default function CategoryMenu() {
           </option>
         ))}
       </select>
+      <p>Selected: {selectedCategory || "All products"}</p>
     </div>
   );
 }
