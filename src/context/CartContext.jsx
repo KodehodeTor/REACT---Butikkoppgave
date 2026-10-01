@@ -53,6 +53,7 @@ export default function CartProvider({ children }) {
   }, 0);
 
   const providerObject = {
+    totalPrice,
     totalItems,
     cart,
     addToCart,
