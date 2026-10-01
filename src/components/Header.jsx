@@ -1,8 +1,8 @@
+import { useSearch } from "../context/SearchContext";
 import NavBar from "./NavBar";
-import { useState } from "react";
 
 export default function Header() {
-  const [searchInput, setSearchInput] = useState("");
+  const { searchInput, setSearchInput } = useSearch();
   return (
     <div>
       <header>
