@@ -6,5 +6,11 @@ export default function CategoryMenu() {
   if (isLoading) return <p>Loading categories....</p>;
   if (isError) return <p>Failed to load categories</p>;
 
-  return <div>Categories loaded.</div>;
+  return (
+    <div>
+      {data.map((category) => (
+        <button key={category.slug}>{category.name}</button>
+      ))}
+    </div>
+  );
 }
