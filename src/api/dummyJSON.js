@@ -1,8 +1,13 @@
 import axios from "axios";
 
 // Returns an array of all products
-const fetchAllProducts = async () => {
-  const res = await axios.get("https://dummyjson.com/products");
+const fetchAllProducts = async ({ limit = 10, skip = 0 }) => {
+  const res = await axios.get("https://dummyjson.com/products", {
+    params: {
+      limit,
+      skip,
+    },
+  });
   return res.data;
 };
 
