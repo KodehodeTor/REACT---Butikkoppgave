@@ -1,4 +1,8 @@
-import { fetchAllProducts, fetchProductDetails } from "../api/dummyJSON";
+import {
+  fetchAllProducts,
+  fetchProductDetails,
+  fetchCategories,
+} from "../api/dummyJSON";
 import { useQuery } from "@tanstack/react-query";
 
 const useProductAll = () => {
@@ -20,4 +24,11 @@ const useProductDetails = (id) => {
   });
 };
 
-export { useProductAll, useProductDetails };
+const useCategories = () => {
+  return useQuery({
+    queryKey: ["categories"],
+    queryFn: fetchCategories,
+  });
+};
+
+export { useProductAll, useProductDetails, useCategories };
