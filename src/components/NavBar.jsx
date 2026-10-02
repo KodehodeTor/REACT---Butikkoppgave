@@ -4,7 +4,7 @@ import { useCart } from "../context/CartContext";
 export default function NavBar() {
   const { totalItems } = useCart();
   return (
-    <nav>
+    <nav className="navBar">
       <Link to="/">
         Home <br />
       </Link>

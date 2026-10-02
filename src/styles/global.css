@@ -199,6 +199,7 @@ body {
 /* Title */
 
 .title {
+  text-align: center;
   margin-top: 1.563rem;
   font-family: "Beleren", "Matrix", "Georgia", serif;
   font-size: 4rem;
@@ -244,4 +245,31 @@ input:focus,
 select:focus {
   outline: 2px solid #d4af73;
   border-color: transparent;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  padding: 1rem 2rem 2rem;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.headerControls {
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
