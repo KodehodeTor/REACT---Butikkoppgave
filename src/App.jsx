@@ -1,13 +1,16 @@
 import { Outlet } from "react-router";
 import Header from "./components/Header";
-import DarkModeToggle from "./components/ThemeSwitch";
+import { useState } from "react";
 
 export default function App() {
+  const [selectedCategory, setSelectedCategory] = useState("");
   return (
     <div>
-      <DarkModeToggle />
-      <Header />
-      <Outlet />
+      <Header
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+      />
+      <Outlet context={{ selectedCategory }} />
     </div>
   );
 }
