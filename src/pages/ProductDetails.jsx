@@ -19,8 +19,7 @@ export default function ProductDetails() {
         <p>{data.description}</p>
         <p>{data.category}</p>
         <p>{data.brand}</p>
-        <p>{data.rating}</p>
-        <p>{data.stock}</p>
+
         <button onClick={() => addToCart(data)}>Add to cart</button>
       </div>
     </main>

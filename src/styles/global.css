@@ -326,3 +326,8 @@ svg {
   height: 400px;
   object-fit: contain;
 }
+
+.productDetailsPrice {
+  font-weight: 600;
+  font-size: 1rem;
+}
