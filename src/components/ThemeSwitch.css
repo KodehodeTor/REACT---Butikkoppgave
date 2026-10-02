@@ -1,0 +1,21 @@
+/* Light / Dark mode */
+
+body.dark li {
+  background-color: #120a0a;
+}
+
+body.dark p {
+  color: whitesmoke;
+}
+
+body.light #root {
+  min-height: 100vh;
+  background-color: whitesmoke;
+  color: #222;
+}
+
+body.dark #root {
+  min-height: 100vh;
+  background-color: #222;
+  color: whitesmoke;
+}
