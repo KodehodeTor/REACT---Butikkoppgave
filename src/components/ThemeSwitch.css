@@ -1,11 +1,15 @@
 /* Light / Dark mode */
 
-html {
-  background-color: #120a0a;
+body.dark {
+  background-color: #222;
+}
+
+body.light {
+  background-color: whitesmoke;
 }
 
 body.dark li {
-  background-color: #120a0a;
+  background-color: #222;
 }
 
 body.dark p {
