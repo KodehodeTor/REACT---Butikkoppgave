@@ -128,3 +128,25 @@ textarea:not([rows]) {
     box-shadow 0.15s ease;
   cursor: pointer;
 }
+
+.productCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.productCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.productCard h3 {
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
