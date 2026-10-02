@@ -277,15 +277,10 @@ select:focus {
   gap: 2rem;
 }
 
-.products_title {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-}
-
-h2 {
+.products_title,
+p,
+h2,
+h3 {
   text-align: center;
 }
 
