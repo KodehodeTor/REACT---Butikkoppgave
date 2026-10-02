@@ -9,7 +9,6 @@ import { useState } from "react";
 
 export default function Products({ selectedCategory }) {
   const { searchInput } = useSearch();
-
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
   const skip = (currentPage - 1) * itemsPerPage;
