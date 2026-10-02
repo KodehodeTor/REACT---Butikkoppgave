@@ -8,10 +8,11 @@ export default function Cart() {
       <h2>Cart</h2>
       <p>Total items: {totalItems}</p>
       <p>Total price: {totalPrice}</p>
-
-      {cart.map((item) => (
-        <ProductCard key={item.id} {...item} />
-      ))}
+      <div className="productList">
+        {cart.map((item) => (
+          <ProductCard key={item.id} {...item} />
+        ))}
+      </div>
     </div>
   );
 }

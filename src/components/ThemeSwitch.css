@@ -1,29 +1,5 @@
-/* Light / Dark mode */
-
-body.dark {
-  background-color: #222;
-}
-
-body.light {
-  background-color: whitesmoke;
-}
-
-body.dark li {
-  background-color: #222;
-}
-
-body.dark p {
-  color: whitesmoke;
-}
-
-body.light #root {
-  min-height: 100vh;
-  background-color: whitesmoke;
-  color: #222;
-}
-
-body.dark #root {
-  min-height: 100vh;
-  background-color: #222;
-  color: whitesmoke;
+.themeSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
