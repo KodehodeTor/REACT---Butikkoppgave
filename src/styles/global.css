@@ -218,3 +218,30 @@ body {
     drop-shadow(0.063rem -0.063rem 0 #000)
     drop-shadow(-0.063rem 0.063rem 0 #000);
 }
+
+/* Input / dropdowns */
+
+input,
+select {
+  background-color: var(--menu-bg);
+  color: var(--text-color);
+  border: 1px solid var(--menu-border);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+}
+
+input::placeholder {
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+input:hover,
+select:hover {
+  background-color: var(--hover-bg);
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #d4af73;
+  border-color: transparent;
+}
