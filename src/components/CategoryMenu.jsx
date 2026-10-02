@@ -11,7 +11,7 @@ export default function CategoryMenu({
 
   return (
     <div>
-      <label htmlFor="category">Category:</label>
+      <label htmlFor="category"></label>
       <select
         id="category"
         value={selectedCategory}
@@ -24,7 +24,7 @@ export default function CategoryMenu({
           </option>
         ))}
       </select>
-      <p>Selected: {selectedCategory || "All products"}</p>
+      {/* <p>Selected: {selectedCategory || "All products"}</p> */}
     </div>
   );
 }
