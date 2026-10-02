@@ -16,7 +16,7 @@ export default function DarkModeToggle() {
 
   return (
     <DarkModeSwitch
-      style={{ marginBottom: "2rem" }}
+      style={{}}
       checked={isDarkMode}
       onChange={toggleDarkMode}
       size={50}
