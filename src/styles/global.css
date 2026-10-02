@@ -41,7 +41,6 @@ ol[role="list"] {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  background-color:;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -97,7 +96,7 @@ textarea:not([rows]) {
 
 /* Theme */
 
-body.light {
+:root {
   --bg-color: whitesmoke;
   --text-color: #1c1f24;
   --card-bg: #fafafa;
@@ -261,7 +260,7 @@ select:focus {
 }
 
 .headerControls {
-  display: Flex;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
