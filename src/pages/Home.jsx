@@ -10,7 +10,7 @@ export default function Home() {
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
-      <h1>Products</h1>
+      <h2>Products</h2>
       <Products selectedCategory={selectedCategory} />
     </main>
   );

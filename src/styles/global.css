@@ -111,7 +111,7 @@ textarea:not([rows]) {
   justify-items: center;
 }
 
-.productCard {
+body.light .productCard {
   width: 280px;
   background: #fafafa;
   backdrop-filter: blur(6px);
@@ -130,6 +130,24 @@ textarea:not([rows]) {
   cursor: pointer;
 }
 
+body.dark .productCard {
+  width: 280px;
+  background: #222;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+  cursor: pointer;
+}
 .productCard:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
