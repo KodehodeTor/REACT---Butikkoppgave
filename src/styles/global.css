@@ -263,7 +263,7 @@ select:focus {
 .headerControls {
   display: Flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -272,4 +272,8 @@ select:focus {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.products_title {
+  text-align: center;
 }

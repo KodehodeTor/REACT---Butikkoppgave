@@ -7,7 +7,7 @@ export default function Home() {
   const { selectedCategory } = useOutletContext();
   return (
     <main>
-      <h2>Products</h2>
+      <h2 className="products_title">Products</h2>
       <Products selectedCategory={selectedCategory} />
     </main>
   );
