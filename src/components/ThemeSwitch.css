@@ -1,5 +1,9 @@
 /* Light / Dark mode */
 
+html {
+  background-color: #120a0a;
+}
+
 body.dark li {
   background-color: #120a0a;
 }
