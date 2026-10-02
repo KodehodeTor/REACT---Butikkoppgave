@@ -95,8 +95,7 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/* ----------------------- */
-
+/* Product Grid */
 .productList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -110,4 +109,22 @@ textarea:not([rows]) {
   box-sizing: border-box;
 
   justify-items: center;
+}
+
+.productCard {
+  width: 280px;
+  backgroun: #ffffff10;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255 0.18);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+  cursor: pointer;
 }
