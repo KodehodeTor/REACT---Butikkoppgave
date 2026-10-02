@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { router } from "./routes/index.jsx";
 import CartProvider from "./context/CartContext.jsx";
 import SearchProvider from "./context/SearchProvider.jsx";
+import "./styles/global.css";
 
 const queryClient = new QueryClient();
 
