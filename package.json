@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "htpps://github.io",
+  "homepage": "https://kodehodetor.github.io/REACT---Butikkoppgave",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
