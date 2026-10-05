@@ -34,4 +34,8 @@ export const router = createBrowserRouter([
     path: "*",
     element: <NotFound />,
   },
+  {
+    // Basename for vite deployment to gh-pages
+    basename: "/REACT---Butikkoppgave",
+  },
 ]);
