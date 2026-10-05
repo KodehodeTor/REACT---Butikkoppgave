@@ -14,14 +14,19 @@ export default function CategoryMenu({
 
   return (
     <div>
-      <label htmlFor="category"></label>
       <select
         id="category"
+        //Keeps selected value synched with selected category.
         value={selectedCategory}
+        // Accessability purposes:
+        aria-label="Product category"
+        // Updates selected category when option is chosen.
         onChange={(e) => setSelectedCategory(e.target.value)}
       >
+        {/* Empty value that represents all products */}
         <option value="">All products</option>
         {data.map((category) => (
+          // Creates option for each category returned by API.
           <option key={category.slug} value={category.slug}>
             {category.name}
           </option>
