@@ -3,7 +3,9 @@ import NavBar from "./NavBar";
 import CategoryMenu from "./CategoryMenu";
 import DarkModeToggle from "./ThemeSwitch";
 
+//Displays header, navbar, search input, categoryMenu and dark mode.
 export default function Header({ selectedCategory, setSelectedCategory }) {
+  // Search value and function to update from SearchContext.
   const { searchInput, setSearchInput } = useSearch();
   return (
     <header className="header">
@@ -17,10 +19,11 @@ export default function Header({ selectedCategory, setSelectedCategory }) {
         <input
           type="text"
           placeholder="Search product"
+          // Input value synched with search context.
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
         />
-
+        {/* Selected category and its state set to CategoryMenu. */}
         <CategoryMenu
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
