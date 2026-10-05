@@ -199,9 +199,9 @@ body {
 
 .title {
   text-align: center;
-  margin-top: 1.563rem;
+
   font-family: "Beleren", "Matrix", "Georgia", serif;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 900;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
@@ -259,7 +259,8 @@ select:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   padding: 0.75rem 1.5rem;
   background-color: var(--nav-bg);
   border: 1px solid var(--menu-border);
@@ -277,9 +278,12 @@ select:focus {
 .navBar {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 8px;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background-color: var(--nav-bg);
 }
-
 .products_title,
 p,
 h2,

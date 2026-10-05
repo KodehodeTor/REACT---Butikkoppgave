@@ -9,9 +9,10 @@ export default function Header({ selectedCategory, setSelectedCategory }) {
     <header className="header">
       <div className="headerNav">
         <DarkModeToggle />
+        <h1 className="title">404: Money Not Found</h1>
         <NavBar />
       </div>
-      <h1 className="title">404: Money Not Found</h1>
+
       <div className="headerControls">
         <input
           type="text"
