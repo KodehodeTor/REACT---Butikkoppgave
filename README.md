@@ -49,6 +49,7 @@ A webshop built in React.
 - Adding user accounts and a check-out system.
 - Reset pagination after a category is chosen.
 - Acessibility: Give images alt text, buttons, links.
+- Add direct link to product details when clicking product card.
 - Previous / next button need styling.
 - Page 1 of 20 section needs better placement.
 - General styling of the entire page.
