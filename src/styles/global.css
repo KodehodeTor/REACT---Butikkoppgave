@@ -219,6 +219,10 @@ body {
     drop-shadow(-0.063rem 0.063rem 0 #000);
 }
 
+h1.title {
+  margin-top: 0rem;
+}
+
 /* Input / dropdowns */
 
 input,
