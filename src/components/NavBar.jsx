@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { useCart } from "../context/CartContext";
 import { House, ShoppingCart } from "lucide-react";
 
-// Displays navigation link and number of items in cart.
+// Displays navigation links and number of items in cart.
 export default function NavBar() {
   // Total numver of items from CartContext.
   const { totalItems } = useCart();

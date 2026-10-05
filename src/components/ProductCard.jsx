@@ -5,7 +5,7 @@ import { Link } from "react-router";
 export default function ProductCard(item) {
   // Uses product properties needed by the component.
   const { title, thumbnail, price, id } = item;
-  // art data and function for adding and deleting products.
+  // Cart data and function for adding and deleting products.
   const { cart, addToCart, removeFromCart } = useCart();
   // Finds matching id in the cart by comparing product id.
   const cartItem = cart.find((item) => item.id === id);

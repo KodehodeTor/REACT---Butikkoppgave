@@ -1,5 +1,3 @@
-// Copying all my code from ToDoList React Oppgave due to time constraints. :)
-
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useState } from "react";
 import "./ThemeSwitch.css";

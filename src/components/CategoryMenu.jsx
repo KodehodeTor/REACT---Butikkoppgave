@@ -16,7 +16,7 @@ export default function CategoryMenu({
     <div>
       <select
         id="category"
-        //Keeps selected value synched with selected category.
+        //Keeps value synched with selected category.
         value={selectedCategory}
         // Accessability purposes:
         aria-label="Product category"
