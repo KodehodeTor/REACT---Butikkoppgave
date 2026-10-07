@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import App from "../App";
 import Cart from "../pages/Cart";
 import Home from "../pages/Home";
@@ -6,7 +6,7 @@ import NotFound from "../pages/NotFound";
 import ProductDetails from "../pages/ProductDetails";
 
 // BrowserRouter - links path with elements:
-export const router = createBrowserRouter(
+export const router = createHashRouter(
   [
     {
       // Main route that share app layout.
@@ -36,8 +36,9 @@ export const router = createBrowserRouter(
       element: <NotFound />,
     },
   ],
-  {
-    // Basename for vite deployment to gh-pages
-    basename: "/REACT---Butikkoppgave",
-  },
+  // Commenting out due to change from BrowserRouter to HashRouter.
+  // {
+  //   // Basename for vite deployment to gh-pages
+  //   basename: "/REACT---Butikkoppgave",
+  // },
 );
