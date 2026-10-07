@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { router } from "./routes/index.jsx";
 import CartProvider from "./context/CartContext.jsx";
 import SearchProvider from "./context/SearchProvider.jsx";
+import ThemeProvider from "./context/ThemeContext.jsx";
 import "./styles/global.css";
 
 // TanStack query client used to manage data and cache.
@@ -19,8 +20,10 @@ createRoot(document.getElementById("root")).render(
       <CartProvider>
         {/* Product search state shared to application. */}
         <SearchProvider>
-          {/* Routing and render of current route. */}
-          <RouterProvider router={router} />
+          <ThemeProvider>
+            {/* Routing and render of current route. */}
+            <RouterProvider router={router} />
+          </ThemeProvider>
         </SearchProvider>
       </CartProvider>
     </QueryClientProvider>
