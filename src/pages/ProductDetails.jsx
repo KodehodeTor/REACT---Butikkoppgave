@@ -24,8 +24,10 @@ export default function ProductDetails() {
         <h2>{data.title}</h2>
         <p className="productDetailsPrice">{data.price}</p>
         <p>{data.description}</p>
-        <p>{data.category}</p>
-        <p>{data.brand}</p>
+        <p>Category:{data.category}</p>
+        <p>Brand:{data.brand}</p>
+        <p>Rating:{data.rating}</p>
+        <p>In stock:{data.stock}</p>
         {/* Adds the product to cart when clicked. */}
         <button onClick={() => addToCart(data)}>Add to cart</button>
       </div>
