@@ -339,3 +339,48 @@ svg {
   font-weight: 600;
   font-size: 1rem;
 }
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .headerNav {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .headerControls {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  /* Search input */
+  input,
+  select {
+    width: 100%;
+    max-width: 320px;
+  }
+  /* Product grid */
+  .productList {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 0.75rem;
+  }
+  /* Product Card */
+  .productCard {
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem;
+  }
+  .productCard img {
+    height: 180px;
+  }
+}
