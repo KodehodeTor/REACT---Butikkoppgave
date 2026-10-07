@@ -1,24 +1,18 @@
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import { useState } from "react";
+import { useContext } from "react";
 import "./ThemeSwitch.css";
+import { ThemeContext } from "../context/ThemeContext";
 
 // Function to toggle light or dark theme.
 export default function DarkModeToggle() {
   // Stores which mode is enabled.
-  const [isDarkMode, setDarkMode] = useState(false);
-  // Updates dark mode state and applies the class to body element.
-  const toggleDarkMode = (checked) => {
-    setDarkMode(checked);
-    // Add or remove class based on current state.
-    document.body.classList.toggle("dark", checked);
-    document.body.classList.toggle("light", !checked);
-  };
+  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
 
   return (
     <DarkModeSwitch
       style={{}}
       // Keeps switch synched with DarkMode state.
-      checked={isDarkMode}
+      checked={darkMode}
       // ToggleMode is activated on on change.
       onChange={toggleDarkMode}
       size={50}
